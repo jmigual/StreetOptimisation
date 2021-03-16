@@ -1,16 +1,74 @@
 {
     "nodes": [
         {
-            "id": 0,
-            "lat": 0.0,
-            "lon": 0.0
+            "id": 1,
+            "latitude": 42.04422040526229,
+            "longitude": 2.910072245208655
+        },
+        {
+            "id": 2,
+            "latitude": 42.04431006859899,
+            "longitude": 2.91198803731413
+        },
+        {
+            "id": 3,
+            "latitude": 42.04386317842417,
+            "longitude": 2.911919460385735
+        },
+        {
+            "id": 4,
+            "latitude": 42.04318808395289,
+            "longitude": 2.910537561947095
+        },
+        {
+            "id": 5,
+            "latitude": 42.0421212504205,
+            "longitude": 2.912124690400557
         }
     ],
     "streets": [
         {
-            "name": "",
-            "nodeA": 1,
-            "nodeB": 2
+            "name": "Carrer Ample",
+            "nodes": [1, 2],
+            "bidirectional": true,
+            "distance": 169.17
+        },
+        {
+            "name": "Carrer de la creu",
+            "nodes": [3, 2],
+            "bidirectional": true,
+            "distance": 45.24
+        },
+        {
+            "name": "Carrer de la creu",
+            "nodes": [3, 4],
+            "bidirectional": false,
+            "distance": 131.83
+        },
+        {
+            "name": "Passeig Aimeric",
+            "nodes": [3, 5],
+            "bidirectional": true,
+            "distance": 192.28
+        },
+        {
+            "name": "Carrer Almeda",
+            "nodes": [4, 5],
+            "bidirectional": true,
+            "distance": 175.33
+        },
+        {
+            "name": "Carrer Montserrat",
+            "nodes": [4, 1],
+            "bidirectional": false,
+            "distance": 175.33
+        }
+    ],
+    "constraints": [
+        {
+            "streetA": [3, 4],
+            "streetB": [3, 5],
+            "maxValue": 3
         }
     ]
 }
