@@ -632,6 +632,17 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "pykdtree"
+version = "1.3.4"
+description = "Fast kd-tree implementation with OpenMP-enabled queries"
+category = "main"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+
+[package.dependencies]
+numpy = "*"
+
+[[package]]
 name = "pyparsing"
 version = "2.4.7"
 description = "Python parsing module"
@@ -731,6 +742,17 @@ description = "Provides an abstraction layer on top of the various Qt bindings (
 category = "dev"
 optional = false
 python-versions = "*"
+
+[[package]]
+name = "scipy"
+version = "1.6.1"
+description = "SciPy: Scientific Library for Python"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+numpy = ">=1.16.5"
 
 [[package]]
 name = "send2trash"
@@ -850,7 +872,7 @@ notebook = ">=4.4.1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "874ddee358c4e753d924eea8fdaac029e8f8842e851c9420802aafd4c188ba89"
+content-hash = "08a50dadf5a277cfa9b4e2ead6524585fed80dd1e2326e6f78f8e8754d19790b"
 
 [metadata.files]
 appnope = [
@@ -1269,6 +1291,25 @@ pygments = [
     {file = "Pygments-2.8.1-py3-none-any.whl", hash = "sha256:534ef71d539ae97d4c3a4cf7d6f110f214b0e687e92f9cb9d2a3b0d3101289c8"},
     {file = "Pygments-2.8.1.tar.gz", hash = "sha256:2656e1a6edcdabf4275f9a3640db59fd5de107d88e8663c5d4e9a0fa62f77f94"},
 ]
+pykdtree = [
+    {file = "pykdtree-1.3.4-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:9b9bf0a495c8a93a1e3b0a5fa4b6e17d0c400edfc9b35b08ee8592fc6ea9153b"},
+    {file = "pykdtree-1.3.4-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:07e2691fb3e801ba5437a0a7976e830b519376c6f0410b322a9bde04af4e5791"},
+    {file = "pykdtree-1.3.4-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:349d5fe0814155e567897a69f9e8b8fc7cae4b5272e4839925a4142e2329b677"},
+    {file = "pykdtree-1.3.4-cp36-cp36m-win_amd64.whl", hash = "sha256:9bec75e42d32b03b6c05ff8ffc1183c6d1f54248acc0c04f27cd3d070b960b5f"},
+    {file = "pykdtree-1.3.4-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:5fe166875079d3a08de187d0efe81fe5fab4da529c61d444598ee09f5b510bce"},
+    {file = "pykdtree-1.3.4-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:abb35fec0fa6db5f8373dc6f81942b19fe97246406628491bbbca528ceac338c"},
+    {file = "pykdtree-1.3.4-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:483df9f9a64f1326682a733d58b22a80e23ce1e0e97b64c4c3fa1ad7c9167c04"},
+    {file = "pykdtree-1.3.4-cp37-cp37m-win_amd64.whl", hash = "sha256:e76c210a595d81e0fa2958d8d67abb95059f50cf1f97aa352fb62a3dd3fbf4d8"},
+    {file = "pykdtree-1.3.4-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:d33b15aaf5654d605a31e6fb134cc8564bffb62fc598311cfcef1bb094a7bf9d"},
+    {file = "pykdtree-1.3.4-cp38-cp38-manylinux1_i686.whl", hash = "sha256:8bd4415b21b3346f3b3e0c9eddc11a63fde884ed48c7629051e8ce9034481539"},
+    {file = "pykdtree-1.3.4-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:10fbbbe6a3de2df94237efa5f300134678958a6a8832b4a5d31f393427c7fba5"},
+    {file = "pykdtree-1.3.4-cp38-cp38-win_amd64.whl", hash = "sha256:b26d345e7c18752ab3d573a28d68ae7d2153d89f8687b366c41fb2c6cf424fc8"},
+    {file = "pykdtree-1.3.4-cp39-cp39-macosx_10_14_x86_64.whl", hash = "sha256:d1c39363afa7024a9d457ee46844e26d188a0fd77f8a0bfc92bed12a92203ac5"},
+    {file = "pykdtree-1.3.4-cp39-cp39-manylinux1_i686.whl", hash = "sha256:17107174cd717d7ed69a483026e74a1cb81fa956ec39de2260837768be74bc8a"},
+    {file = "pykdtree-1.3.4-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:c72ef6d5e912c0187cf0fc34b57ac1f423882c6259cc57329f9526c81f916df8"},
+    {file = "pykdtree-1.3.4-cp39-cp39-win_amd64.whl", hash = "sha256:83127e38297e25956e9a5e86bc16d9f0f5344e4c6aabb226f6c623c184ed4483"},
+    {file = "pykdtree-1.3.4.tar.gz", hash = "sha256:bebe5c608129f2997e88510c00010b9a78581b394924c0e3ecd131d52415165d"},
+]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
     {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
@@ -1352,6 +1393,27 @@ qtconsole = [
 qtpy = [
     {file = "QtPy-1.9.0-py2.py3-none-any.whl", hash = "sha256:fa0b8363b363e89b2a6f49eddc162a04c0699ae95e109a6be3bb145a913190ea"},
     {file = "QtPy-1.9.0.tar.gz", hash = "sha256:2db72c44b55d0fe1407be8fba35c838ad0d6d3bb81f23007886dc1fc0f459c8d"},
+]
+scipy = [
+    {file = "scipy-1.6.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:a15a1f3fc0abff33e792d6049161b7795909b40b97c6cc2934ed54384017ab76"},
+    {file = "scipy-1.6.1-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:e79570979ccdc3d165456dd62041d9556fb9733b86b4b6d818af7a0afc15f092"},
+    {file = "scipy-1.6.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:a423533c55fec61456dedee7b6ee7dce0bb6bfa395424ea374d25afa262be261"},
+    {file = "scipy-1.6.1-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:33d6b7df40d197bdd3049d64e8e680227151673465e5d85723b3b8f6b15a6ced"},
+    {file = "scipy-1.6.1-cp37-cp37m-win32.whl", hash = "sha256:6725e3fbb47da428794f243864f2297462e9ee448297c93ed1dcbc44335feb78"},
+    {file = "scipy-1.6.1-cp37-cp37m-win_amd64.whl", hash = "sha256:5fa9c6530b1661f1370bcd332a1e62ca7881785cc0f80c0d559b636567fab63c"},
+    {file = "scipy-1.6.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:bd50daf727f7c195e26f27467c85ce653d41df4358a25b32434a50d8870fc519"},
+    {file = "scipy-1.6.1-cp38-cp38-manylinux1_i686.whl", hash = "sha256:f46dd15335e8a320b0fb4685f58b7471702234cba8bb3442b69a3e1dc329c345"},
+    {file = "scipy-1.6.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:0e5b0ccf63155d90da576edd2768b66fb276446c371b73841e3503be1d63fb5d"},
+    {file = "scipy-1.6.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:2481efbb3740977e3c831edfd0bd9867be26387cacf24eb5e366a6a374d3d00d"},
+    {file = "scipy-1.6.1-cp38-cp38-win32.whl", hash = "sha256:68cb4c424112cd4be886b4d979c5497fba190714085f46b8ae67a5e4416c32b4"},
+    {file = "scipy-1.6.1-cp38-cp38-win_amd64.whl", hash = "sha256:5f331eeed0297232d2e6eea51b54e8278ed8bb10b099f69c44e2558c090d06bf"},
+    {file = "scipy-1.6.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:0c8a51d33556bf70367452d4d601d1742c0e806cd0194785914daf19775f0e67"},
+    {file = "scipy-1.6.1-cp39-cp39-manylinux1_i686.whl", hash = "sha256:83bf7c16245c15bc58ee76c5418e46ea1811edcc2e2b03041b804e46084ab627"},
+    {file = "scipy-1.6.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:794e768cc5f779736593046c9714e0f3a5940bc6dcc1dba885ad64cbfb28e9f0"},
+    {file = "scipy-1.6.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:5da5471aed911fe7e52b86bf9ea32fb55ae93e2f0fac66c32e58897cfb02fa07"},
+    {file = "scipy-1.6.1-cp39-cp39-win32.whl", hash = "sha256:8e403a337749ed40af60e537cc4d4c03febddcc56cd26e774c9b1b600a70d3e4"},
+    {file = "scipy-1.6.1-cp39-cp39-win_amd64.whl", hash = "sha256:a5193a098ae9f29af283dcf0041f762601faf2e595c0db1da929875b7570353f"},
+    {file = "scipy-1.6.1.tar.gz", hash = "sha256:c4fceb864890b6168e79b0e714c585dbe2fd4222768ee90bc1aa0f8218691b11"},
 ]
 send2trash = [
     {file = "Send2Trash-1.5.0-py3-none-any.whl", hash = "sha256:f1691922577b6fa12821234aeb57599d887c4900b9ca537948d2dac34aea888b"},
